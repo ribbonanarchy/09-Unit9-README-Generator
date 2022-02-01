@@ -57,8 +57,20 @@ const questions = [
     }
 ];
 
+const promptUser = () => {
+    return inquirer.prompt(questions);
+}
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync('README.md', 
+
+    `howdy`
+
+    );
+}
+
+writeToFile();
 
 // TODO: Create a function to initialize app
 function init() {}
