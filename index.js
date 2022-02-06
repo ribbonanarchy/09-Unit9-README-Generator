@@ -81,62 +81,68 @@ function generateMarkdown({project_name, description, install_cmd, need_to_know,
     
     return `# ${project_name}    
     
-    ---
+---
     
-    ## Description     
+## Description     
     
-    ${description}
+${description}
 
-    ---
+---
     
-    ## Table of Contents    
+## Table of Contents    
     
+[Installation](#installation)       
+[Usage](#usage)    
+[License](#license)    
+[Contributing](#contributing)    
+[Tests](#tests)    
+[Questions](#questions)
 
+--- 
+<a name="installation"></a>  
+## <a name="installation"></a>Installation    
 
-    --- 
+The command to install dependencies is ${install_cmd}.
+
+--- 
+
+## <a name="usage"></a>Usage    
     
-    ## Installation    
+${need_to_know}
 
-    The command to install dependencies is ${install_cmd}.
+--- 
 
-    --- 
+## <a name="license"></a>License    
 
-    ## Usage    
+--- 
+
+## <a name="contributing"></a>Contributing    
+
+${how_to_contribute}
+
+---
+
+## <a name="tests"></a>Tests    
     
-    ${need_to_know}
+The command to run tests is ${test_cmd}. 
 
-    --- 
+---   
 
-    ## License    
+## <a name="questions"></a>Questions    
 
-    --- 
-
-    ## Contributing    
-
-    ${how_to_contribute}
-
-    ---
-
-    ## Tests    
-    
-    The command to run tests is ${test_cmd}. 
-
-    --- 
-
-    ## Questions    
-
-    Github repository:   
-    github.com/${github}   
-    Email:    
-    ${email}    
-    `;
+Github repository:   
+[link to github account](github.com/${github})     
+Email:    
+${email}    
+`;
 }
 
 // TODO: Create a function to initialize app
 function init() {
     promptUser()
-    // Use writeFileSync method to use promises instead of a callback function
-    .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
+    // Use writeFileSync method to use promises instead of a callback function 
+    // (using README1 so that github doesn't read the generated file for the project README)
+    .then((answers) => fs.writeFileSync('README1.md', generateMarkdown(answers)))
     .then(() => console.log('Successfully wrote to README'))
     .catch((err) => console.error(err));
 }
