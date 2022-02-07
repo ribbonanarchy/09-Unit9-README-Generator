@@ -131,7 +131,7 @@ The command to run tests is ${test_cmd}.
 ## <a name="questions"></a>Questions    
 
 Github repository:   
-[link to github account](github.com/${github})     
+[github.com/${github}](github.com/${github})     
 Email:    
 ${email}    
 `;

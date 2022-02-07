@@ -1,10 +1,10 @@
-# Pokemon Vs Nature    
+# README Generator    
     
 ---
     
 ## Description     
     
-Peruse the forecast of a given city and use the different weather to determine which Pokemon you can use in battle@
+This application uses the Node Inquirer package to prompt the user for information about a given project. A README markdown file is then generated that contains the information provided by the user. 
 
 ---
     
@@ -21,13 +21,13 @@ Peruse the forecast of a given city and use the different weather to determine w
 <a name="installation"></a>  
 ## <a name="installation"></a>Installation    
 
-The command to install dependencies is --.
+The command to install dependencies is npm i.
 
 --- 
 
 ## <a name="usage"></a>Usage    
     
-Contact me first!
+Feel free to use the application any time.
 
 --- 
 
@@ -37,26 +37,19 @@ Contact me first!
 
 ## <a name="contributing"></a>Contributing    
 
-Contact me first
+Contact me via email if you have any questions about contributing.
 
 ---
 
 ## <a name="tests"></a>Tests    
     
-The command to run tests is --. 
+The command to run tests is N/A. 
 
---- 
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
+---   
 
 ## <a name="questions"></a>Questions    
 
 Github repository:   
-[link to github account](github.com/ribbonanarchy)     
+[github.com/ribbonanarchy](github.com/ribbonanarchy)     
 Email:    
 robynarnecke@gmail.com    
